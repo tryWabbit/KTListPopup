@@ -10,13 +10,14 @@ import UIKit
 struct KTItem {
     var id : String?
     var title : String!
+    var image : UIImage?
 }
 typealias KTCallback = (KTItem) -> Void
 class KTListPopup: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     var dataSource : [KTItem] = []
     var callback : KTCallback?
-    var font = UIFont.systemFont(ofSize: 16.0)
+    var font = UIFont.systemFont(ofSize: 18.0)
     var offset : CGFloat = 10.0
     let cellIdentifier = "Cell"
     var width : CGFloat?
@@ -31,11 +32,15 @@ class KTListPopup: UIViewController {
     }
     func getSizeFromDataSource() -> CGSize {
         var height : CGFloat = 0.0
-        let leftOffset : CGFloat = 20.0
+        let leftOffset : CGFloat = 10.0
         let rightOffset : CGFloat = 10.0
         let topOffset : CGFloat = 12.0
+        let stackviewSpace : CGFloat = 8.0
+        let imageSize : CGFloat = 20.0 + stackviewSpace
         for item in dataSource {
-            let cellWidth = getWidth() - (leftOffset + rightOffset)
+            var totalOffset = (leftOffset + rightOffset)
+            totalOffset += item.image != nil ? imageSize : 0.0
+            let cellWidth = getWidth() - totalOffset
             height = height + item.title.height(withConstrainedWidth: cellWidth, font: font)
             height = height + (topOffset * 2)
         }
@@ -69,7 +74,10 @@ extension KTListPopup : UITableViewDataSource {
             cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier) as? KTTableViewCell
         }
         cell?.titleLabel.font = font
-        cell?.titleLabel.text  = dataSource[indexPath.row].title
+        let item = dataSource[indexPath.row]
+        cell?.titleLabel.text  = item.title
+        cell?.icon.image = item.image
+        cell?.icon.isHidden = item.image == nil
         return cell ?? UITableViewCell()
     }
 }

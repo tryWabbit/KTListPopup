@@ -10,6 +10,5 @@ import UIKit
 
 class KTTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var constraintTopOffset: NSLayoutConstraint!
-    @IBOutlet weak var constraintLeftOffset: NSLayoutConstraint!
+    @IBOutlet weak var icon: UIImageView!
 }
