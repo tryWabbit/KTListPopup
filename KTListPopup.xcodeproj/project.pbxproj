@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F3905EA22D5FB4A00F7C564 /* ViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3905E922D5FB4A00F7C564 /* ViewController+Animation.swift */; };
-		3F6D825522D30F890020D554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D825422D30F890020D554 /* Assets.xcassets */; };
 		3F6D825722D30F940020D554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D825622D30F940020D554 /* LaunchScreen.storyboard */; };
+		3F94B36F22D71B9C00D22A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F94B36E22D71B9C00D22A5D /* Assets.xcassets */; };
 		3F9E0CA622D472A700EBD4FA /* KTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9E0CA222D472A700EBD4FA /* KTTableViewCell.swift */; };
 		3F9E0CA722D472A700EBD4FA /* KTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E0CA322D472A700EBD4FA /* KTTableViewCell.xib */; };
 		3F9E0CA822D472A700EBD4FA /* KTListPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9E0CA422D472A700EBD4FA /* KTListPopup.swift */; };
@@ -21,8 +21,8 @@
 
 /* Begin PBXFileReference section */
 		3F3905E922D5FB4A00F7C564 /* ViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Animation.swift"; sourceTree = "<group>"; };
-		3F6D825422D30F890020D554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Google-Api-Helper/Google Api/Assets.xcassets"; sourceTree = "<group>"; };
 		3F6D825622D30F940020D554 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F94B36E22D71B9C00D22A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9E0CA222D472A700EBD4FA /* KTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTTableViewCell.swift; sourceTree = "<group>"; };
 		3F9E0CA322D472A700EBD4FA /* KTTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTTableViewCell.xib; sourceTree = "<group>"; };
 		3F9E0CA422D472A700EBD4FA /* KTListPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTListPopup.swift; sourceTree = "<group>"; };
@@ -80,9 +80,9 @@
 				3F3905E922D5FB4A00F7C564 /* ViewController+Animation.swift */,
 				3F6D825822D31B170020D554 /* Source */,
 				3FF3648E22D0A76B00BEAB51 /* Main.storyboard */,
-				3F6D825422D30F890020D554 /* Assets.xcassets */,
 				3F6D825622D30F940020D554 /* LaunchScreen.storyboard */,
 				3FF3649622D0A76C00BEAB51 /* Info.plist */,
+				3F94B36E22D71B9C00D22A5D /* Assets.xcassets */,
 			);
 			path = "List Popup";
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 				3F6D825722D30F940020D554 /* LaunchScreen.storyboard in Resources */,
 				3F9E0CA722D472A700EBD4FA /* KTTableViewCell.xib in Resources */,
 				3F9E0CA922D472A700EBD4FA /* KTListPopup.xib in Resources */,
-				3F6D825522D30F890020D554 /* Assets.xcassets in Resources */,
+				3F94B36F22D71B9C00D22A5D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

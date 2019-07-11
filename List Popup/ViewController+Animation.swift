@@ -8,11 +8,6 @@
 
 import UIKit
 
-extension ViewController : UIPopoverPresentationControllerDelegate {
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        return .none
-    }
-}
 extension ViewController {
     func addAnimation() {
         imageViewAnimation.alpha = 0.0

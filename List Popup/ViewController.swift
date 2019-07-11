@@ -69,4 +69,9 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController : UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+}
 
