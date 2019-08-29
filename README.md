@@ -1,7 +1,8 @@
 # KTListPopup
 
 
-![Swift](https://img.shields.io/badge/Swift-v5.0-orange.svg) ![Xcode](https://img.shields.io/badge/XCode-10.2-blue.svg)
+![Swift](https://img.shields.io/badge/Swift-v5.0-orange.svg)
+![Xcode](https://img.shields.io/badge/XCode-10.2-blue.svg)
 
 A Beautiful View Controller to present Menu Item in a list. It Shows a Popup with the list of items provided with dynamic content sizing and selection callback.
 
